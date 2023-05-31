@@ -1,0 +1,284 @@
+.casecard {
+    display: flex;
+    flex-direction: column;
+    max-width: 784px;
+    margin-left: 12.5%;
+    padding: 48px;
+    border: solid 1px rgb(220 226 232 / 50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 28px;
+    
+}
+
+/* ------------------ casecard__title-section ------------------------ */
+
+.add-case-btn {
+    width: 94px;
+    height: 26px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    background: #FFDD2D;
+    border: #FFDD2D;
+}
+
+.casecard__title-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.casecard__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F1F3F5;
+}
+
+.casecard__title {
+    width: 75%;
+    position: absolute;
+    top: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+
+/* ------------------------------- ХЕШ-ТЕГИ --------------------------- */
+
+.tags {
+    width: 90%;
+    color: #808C9E;
+}
+    
+.tags__list {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.tags__item {
+    margin: 0 12px 12px 0;
+    list-style-type: '#';
+    list-style-position: inside;
+    background-color: #F1F3F5;
+}
+
+.tags__text {
+    display: inline-block;
+    padding-left: 5px;
+    text-decoration: none;
+    color: #808C9E;
+}
+
+/* --------------------- Универсальная СЕКЦИЯ --------------------- */
+
+.section {
+    display: block;
+    padding-top: 48px;
+}
+
+.section__title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 16px;
+}
+
+.paragraph, .tasks__item, .solution__item {
+    padding-bottom: 20px;
+}
+
+/* ------------------------ СПИСОК ЗАДАЧ ----------------- */
+
+.tasks__item {
+    list-style-type: '👉';
+    list-style-position: inside;
+}
+
+/* ----------------------- РЕШЕНИЕ -------------------- */
+.solution__title {
+    display: inline-block;
+    border-bottom: solid 1.5px;
+    border-color: rgb(51 111 238 / 20%);
+    color: #597DB3;
+}
+
+.arrow-icon {
+    display: inline-block;
+    width: 1em;
+    height: 0.6em;
+}
+
+.solution__item {
+    list-style-type: '✅';
+    list-style-position: inside;
+}
+
+/* --------------------------- ОБОЗРЕВАТЕЛЬ ------------------------ */
+
+.reviewer-card {
+    display: flex;
+    max-width: 288px;
+    padding-top: 30px;
+}
+
+.reviewer-card__photo {
+    width: 64px;
+    height: 64px;
+
+}
+
+.reviewer-card__photo img {
+    position: absolute;
+}
+/* ---------------------------- СОСТАВНАЯ КАРТИНКА --------------------- */
+.photo-icon {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #F1F3F5;
+}
+
+.photo-icon__hair-part {
+    left: 17.82px;
+    top: 14.75px;
+}
+
+.photo-icon__face-part {
+    left: 32.5px;
+    top: 20.5px;
+}
+
+.photo-icon__body-part {
+    left: 20px;
+    top: 33.5px;
+}
+
+.reviewer-card__info {
+    padding-left: 16px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.reviewer-card__name {
+    font-weight: 700;
+}
+
+.reviewer-card__job-title {
+    color: #808C9E;
+}
+
+/* --------------------------------- ФУТЕР ------------------------------ */
+.casecard__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #808C9E;
+}
+
+.full-page-link {
+    display: inline-block;
+    min-width: 150px;
+    text-decoration: none;
+}
+
+.full-page-link__text {
+    border-bottom: solid 1.5px;
+    border-color: rgb(89 125 179 / 10%);
+    color: rgb(89 125 179);
+}
+
+/*  --------------------------- МОДИФИКАТОРЫ ------------------------- */
+
+.non-desktop {
+    display: none;
+}
+
+/* ----------------------------- МЕДИА ЗАПРОСЫ ---------------------- */
+
+@media only screen and (max-width:768px) {
+    
+    .casecard {
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .casecard__title-section {
+        padding-bottom: 28px;
+    }
+
+    .casecard__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .section__title {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .section__title {
+        padding-bottom: 12px;
+    }
+
+    .non-desktop {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width:320px) {
+    
+    .casecard {
+       padding: 24px 12px;
+    }
+
+    .casecard__title-section{
+        flex-direction: column;
+        height: 194px;
+        padding-bottom: 12px;
+    }
+
+    .casecard__title {
+        position: relative;
+        top: 0;
+    }
+
+    .tags {
+        width: 100%;
+    }
+
+    .tags__title {
+        padding-bottom: 8px;
+    }
+
+   .casecard__footer {
+    flex-direction: column;
+    }
+
+   .casecard__redactor {
+    padding-bottom: 8px;
+    }
+
+    .wrapper {
+        display: block;
+    }
+}
